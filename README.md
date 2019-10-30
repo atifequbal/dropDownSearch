@@ -8,13 +8,13 @@ Angular-Dropdown-Search component is an angular component which helps you to pop
 `npm install angular-dropdown-search --save`
 
 
-## HOW TO USE
+## How To Use
 
-`import {AngularDropDownSearchComponent} from "./lib/angular-drop-down-search"`;
+`import {AngularDropDownSearchComponent} from "angular-dropdown-search"`;
 
 `<lib-angular-drop-down-search 
-    [dropDownList]="PASS_ARRAY_LIST" 
-    (selectedItem)="YOUR_FUNCTION($event)">
+[dropDownList]="PASS_ARRAY_LIST" 
+(selectedItem)="YOUR_FUNCTION($event)">
  </lib-angular-drop-down-search>`
 
 Sample ArrayList: [{itemName:'ABCD', otherFileds:''}]
