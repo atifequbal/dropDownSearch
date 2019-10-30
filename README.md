@@ -29,6 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## HOW TO USE
 
 import {AngularDropDownSearchComponent} from "./lib/angular-drop-down-search";
+
 <lib-angular-drop-down-search [dropDownList]="PASS_ARRAY_LIST" (selectedItem)="YOUR_FUNCTION($event)"></lib-angular-drop-down-search>
 
 ArrayList would be like: [{itemName:'ABCD', otherFileds:''}]
