@@ -18,3 +18,11 @@ Angular-Dropdown-Search component is an angular component which helps you to pop
  </lib-angular-drop-down-search>`
 
 Sample ArrayList: [{itemName:'ABCD', otherFileds:''}]
+
+## Author
+
+Atif Equbal
+
+## License
+
+MIT
