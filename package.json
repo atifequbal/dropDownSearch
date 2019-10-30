@@ -1,5 +1,5 @@
 {
-  "name": "my-drop-down",
+  "name": "angular-dropdown-search",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -47,4 +47,10 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   }
+  "author": "Atif Equbal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atifequbal/dropDownSearch/issues"
+  },
+  "homepage": "https://github.com/atifequbal/dropDownSearch#readme"
 }
