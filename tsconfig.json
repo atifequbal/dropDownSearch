@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angular-drop-down-search": [
+        "dist/angular-drop-down-search"
+      ],
+      "angular-drop-down-search/*": [
+        "dist/angular-drop-down-search/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
