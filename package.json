@@ -52,5 +52,14 @@
   "bugs": {
     "url": "https://github.com/atifequbal/dropDownSearch/issues"
   },
-  "homepage": "https://github.com/atifequbal/dropDownSearch#readme"
+  "homepage": "https://github.com/atifequbal/dropDownSearch#readme",
+  "keywords": [
+    "angular-dropdown-search",
+    "angular",
+    "angular-dropdown",
+    "angular8",
+    "npm angular dropdown",
+    "dropdown angularjs",
+    "ng dropdown"
+  ]
 }
