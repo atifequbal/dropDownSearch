@@ -13,7 +13,7 @@ Angular-Dropdown-Search component is an angular component which helps you to pop
 
 ## How To Use
 
-`import {AngularDropDownSearchComponent} from "angular-dropdown-search"`;
+`import {AngularDropDownSearchComponent} from "angular-dropdown-search/projects/angular-drop-down-search/src/lib/angular-drop-down-search.component"`;
 
 `<lib-angular-drop-down-search 
 [dropDownList]="PASS_ARRAY_LIST" 
