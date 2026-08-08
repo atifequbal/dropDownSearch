@@ -17,6 +17,12 @@
       "dom"
     ],
     "paths": {
+      "angular-dropdown-search": [
+        "./projects/angular-drop-down-search/src/public-api.ts"
+      ],
+      "angular-dropdown-search/*": [
+        "./projects/angular-drop-down-search/src/*"
+      ],
       "angular-drop-down-search": [
         "./dist/angular-drop-down-search"
       ],
@@ -28,5 +34,13 @@
   "angularCompilerOptions": {
     "strictTemplates": true,
     "strictInjectionParameters": true
-  }
+  },
+  "references": [
+    {
+      "path": "./projects/demo/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.spec.json"
+    }
+  ]
 }

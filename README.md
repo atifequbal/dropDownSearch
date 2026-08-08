@@ -70,6 +70,40 @@ items = [
 - Native browser datalist behavior kept lightweight, with styling applied to the visible search control.
 - No Bootstrap class dependency required.
 
+## Local Demo App
+
+This repository includes a separate demo application under `projects/demo` for visual testing. It consumes the library through local workspace path mapping and is not part of the published library package.
+
+Run the demo:
+
+```bash
+npm start
+```
+
+or:
+
+```bash
+npm run demo
+```
+
+Then open:
+
+```text
+http://127.0.0.1:4200/
+```
+
+Build only the demo:
+
+```bash
+npm run demo:build
+```
+
+Build the publishable library:
+
+```bash
+npm run build
+```
+
 ## Author
 
 Md. Atif Equbal

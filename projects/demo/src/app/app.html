@@ -1,0 +1,43 @@
+<main class="demo-shell">
+  <section class="demo-panel" aria-labelledby="demo-title">
+    <div class="demo-copy">
+      <p class="demo-kicker">Local demo app</p>
+      <h1 id="demo-title">angular-dropdown-search v2</h1>
+      <p>
+        This page lives in <code>projects/demo</code> and consumes the library through the
+        workspace path mapping. It is only for local testing and is not exported by the library.
+      </p>
+    </div>
+
+    <div class="demo-control">
+      <lib-angular-drop-down-search
+        [dropDownList]="customers"
+        displayField="itemName"
+        label="Customer"
+        placeholder="Search customers..."
+        [clearable]="true"
+        (searchValueChange)="onSearchValueChange($event)"
+        (selectedItem)="onSelectedItem($event)">
+      </lib-angular-drop-down-search>
+    </div>
+
+    <section class="demo-result" aria-label="Selected customer">
+      <div>
+        <span class="result-label">Typed value</span>
+        <strong>{{ searchText || 'Nothing typed yet' }}</strong>
+      </div>
+
+      <div>
+        <span class="result-label">Selected item</span>
+        <strong>{{ selectedCustomer?.itemName || 'No matching customer' }}</strong>
+      </div>
+
+      <div>
+        <span class="result-label">Details</span>
+        <strong>
+          {{ selectedCustomer?.email || 'Select a customer from the dropdown' }}
+        </strong>
+      </div>
+    </section>
+  </section>
+</main>

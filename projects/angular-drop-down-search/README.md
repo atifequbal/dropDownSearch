@@ -40,6 +40,18 @@ After building your library with `ng build angular-drop-down-search`, go to the 
 
 Run `ng test angular-drop-down-search` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Local demo
+
+The repository-level demo app lives in `projects/demo` and is separate from this publishable library package.
+
+From the repository root, run:
+
+```bash
+npm start
+```
+
+Open `http://127.0.0.1:4200/` to test the dropdown visually.
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

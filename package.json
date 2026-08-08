@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve demo",
+    "demo": "ng serve demo",
+    "demo:build": "ng build demo",
     "build": "ng build angular-drop-down-search",
     "test": "ng test angular-drop-down-search",
     "lint": "eslint \"projects/angular-drop-down-search/src/**/*.ts\""
@@ -29,15 +31,17 @@
     "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^9.0.0",
     "jasmine-core": "^5.8.0",
+    "jsdom": "^27.1.0",
     "karma": "^6.4.0",
     "karma-chrome-launcher": "^3.2.0",
     "karma-coverage": "^2.2.0",
     "karma-jasmine": "^5.1.0",
     "karma-jasmine-html-reporter": "^2.1.0",
     "ng-packagr": "22.1.0",
-    "typescript": "~6.0.0"
+    "typescript": "~6.0.0",
+    "vitest": "^4.0.8"
   },
-  "author": "Atif Equbal",
+  "author": "Md. Atif Equbal",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/atifequbal/dropDownSearch/issues"
