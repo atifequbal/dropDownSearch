@@ -1,34 +1,32 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
     "importHelpers": true,
-    "target": "es2015",
+    "target": "ES2022",
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
-      "es2018",
+      "ES2022",
       "dom"
     ],
     "paths": {
       "angular-drop-down-search": [
-        "dist/angular-drop-down-search"
+        "./dist/angular-drop-down-search"
       ],
       "angular-drop-down-search/*": [
-        "dist/angular-drop-down-search/*"
+        "./dist/angular-drop-down-search/*"
       ]
     }
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
+    "strictTemplates": true,
     "strictInjectionParameters": true
   }
 }

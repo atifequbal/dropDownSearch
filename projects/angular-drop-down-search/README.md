@@ -1,6 +1,8 @@
-# AngularDropDownSearch
+# angular-dropdown-search
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+Angular dropdown search component built as a reusable Angular 22+ library.
+
+Current version: `2.0.0`
 
 ## Code scaffolding
 
@@ -10,6 +12,25 @@ Run `ng generate component component-name --project angular-drop-down-search` to
 ## Build
 
 Run `ng build angular-drop-down-search` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Usage
+
+```ts
+import { AngularDropDownSearchModule } from 'angular-dropdown-search';
+```
+
+```html
+<lib-angular-drop-down-search
+  [dropDownList]="items"
+  displayField="itemName"
+  label="Customer"
+  placeholder="Search customers..."
+  [clearable]="true"
+  (selectedItem)="onSelectedItem($event)">
+</lib-angular-drop-down-search>
+```
+
+The component emits the selected object when the typed value matches the configured display field, and emits `null` when the value is cleared or does not match.
 
 ## Publishing
 

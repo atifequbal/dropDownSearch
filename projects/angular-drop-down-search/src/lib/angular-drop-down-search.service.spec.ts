@@ -6,7 +6,7 @@ describe('AngularDropDownSearchService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: AngularDropDownSearchService = TestBed.get(AngularDropDownSearchService);
+    const service: AngularDropDownSearchService = TestBed.inject(AngularDropDownSearchService);
     expect(service).toBeTruthy();
   });
 });

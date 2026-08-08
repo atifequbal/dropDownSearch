@@ -1,8 +1,32 @@
-<div class="col-md-12">
-  <label>
-    <input list="dropDownList" class="form-control" (change)="getSelectedItem($event.target.value)" placeholder="Search..." name="dropDownList" />
-  </label>
-  <datalist id="dropDownList">
-    <option *ngFor="let d of dropDownList" value="{{d.itemName}}"></option>
+<div class="ads-field" [class.ads-field--disabled]="disabled">
+  <label *ngIf="label" class="ads-label" [attr.for]="inputId">{{ label }}</label>
+  <div class="ads-control">
+    <span class="ads-search-icon" aria-hidden="true"></span>
+    <input
+      #searchInput
+      [attr.id]="inputId"
+      [attr.list]="datalistId"
+      [disabled]="disabled"
+      [placeholder]="placeholder"
+      class="ads-input"
+      name="dropDownList"
+      type="text"
+      autocomplete="off"
+      (input)="onSearchInput($event.target.value)"
+      (change)="getSelectedItem($event.target.value)" />
+    <button
+      *ngIf="clearable"
+      [hidden]="!searchValue || disabled"
+      aria-label="Clear selection"
+      class="ads-clear"
+      type="button"
+      (click)="clearSelection(searchInput)">
+      &times;
+    </button>
+  </div>
+  <datalist [id]="datalistId">
+    <ng-container *ngFor="let d of dropDownList">
+      <option [value]="getDisplayValue(d)"></option>
+    </ng-container>
   </datalist>
 </div>

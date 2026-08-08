@@ -1,8 +1,11 @@
 {
-  "name": "angular-drop-down-search",
-  "version": "0.0.1",
+  "name": "angular-dropdown-search",
+  "version": "2.0.0",
   "peerDependencies": {
-    "@angular/common": "^8.2.0",
-    "@angular/core": "^8.2.0"
+    "@angular/common": "^22.0.0",
+    "@angular/core": "^22.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.8.0"
   }
 }

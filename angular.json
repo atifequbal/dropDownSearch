@@ -10,33 +10,27 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular/build:ng-packagr",
           "options": {
             "tsConfig": "projects/angular-drop-down-search/tsconfig.lib.json",
             "project": "projects/angular-drop-down-search/ng-package.json"
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular/build:karma",
           "options": {
-            "main": "projects/angular-drop-down-search/src/test.ts",
             "tsConfig": "projects/angular-drop-down-search/tsconfig.spec.json",
-            "karmaConfig": "projects/angular-drop-down-search/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/angular-drop-down-search/tsconfig.lib.json",
-              "projects/angular-drop-down-search/tsconfig.spec.json"
+            "karmaConfig": "projects/angular-drop-down-search/karma.conf.js",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
             ],
-            "exclude": [
-              "**/node_modules/**"
+            "include": [
+              "projects/angular-drop-down-search/src/**/*.spec.ts"
             ]
           }
         }
       }
-    }},
-  "defaultProject": "angular-drop-down-search"
+    }
+  }
 }
